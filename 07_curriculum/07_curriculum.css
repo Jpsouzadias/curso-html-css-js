@@ -1,11 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #95ecfc;
+    width: 90%;
+    margin: auto;
 }
 
 h1 {
     color: #91513e;
     background-color: rgb(214, 150, 52);
+    text-align: center;
 }
 
 h2 {
@@ -13,4 +16,6 @@ h2 {
     background-color: #8f8f8f;
     border-bottom-style: solid;
     border-bottom-color: #ff0000;
+    padding-left: 10px;
+    border-width: 2px;
 }
