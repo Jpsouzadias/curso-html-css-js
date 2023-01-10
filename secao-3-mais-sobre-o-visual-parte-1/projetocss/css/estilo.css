@@ -13,6 +13,12 @@ body {
     background-position: right center;
     background-size: cover;
 }
+
+.hero li {
+    display: inline-block;
+    border: 2px #ccc solid;
+}
+
 .hero-content {
     text-align: center;
     color: white;
@@ -54,3 +60,4 @@ footer p {
     color: white;
     text-shadow: 2px 2px 2px #333;
 }
+
