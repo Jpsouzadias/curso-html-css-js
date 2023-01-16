@@ -1,0 +1,14 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition-property: width, height;
+    transition-duration: 1s, 3s;
+    transition-timing-function: cubic-bezier(.76,-0.78,.27,1.54);
+    transition-delay: 0, .8s;
+}
+
+div:hover {
+    width: 400px;
+    height: 400px;
+}
