@@ -1,3 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: red;
+    background-image: linear-gradient(70deg,red 50%,blue ,black, white, orange 60%), url(/secao-3-mais-sobre-o-visual-parte-1/08_imagens/imagens/bg.jpg);
+    background-size: auto, 100% 100%;
+    
+}
+
 #radius {
     background-color: orange;
     width: 200px;
@@ -12,4 +25,5 @@ h1 {
     font-size: 50px;
     text-align: center;
     text-shadow: -1px 1px 0 #5d5d5d, -2px 2px 0 #727272, -3px 3px 0 #868686, -4px 4px 0 #a3a3a3, -5px 5px 0 #bcbcbc;
+    color: white;
 }
