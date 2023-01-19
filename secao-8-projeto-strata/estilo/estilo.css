@@ -63,6 +63,10 @@ blockquote {
     padding: .5em 0 .5em 1.5em;
 }
 
+blockquote p{
+    margin-bottom: 0;
+}
+
 code {
     background-color: #f7f7f7;
     border-radius: .35em;
@@ -86,6 +90,13 @@ ul, ol {
 
 li {
     padding-left: .5em;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    display: block;
+    overflow: hidden;   
 }
 
 .ul-alternate {
@@ -239,6 +250,11 @@ textarea {
     background-position: left top;
     background-size: auto, cover;
     text-align: right;
+}
+
+.main-header p {
+    font-size: 20px;
+    color: white;
 }
 
 .main-header-tittle {
