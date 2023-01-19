@@ -296,3 +296,15 @@ textarea {
     margin-left: 3%;
     float: left;
 }
+
+.img-left {
+    float: left;
+    margin: 15px 25px;
+    border-radius: 10px;
+}
+
+.img-right {
+    float: right;
+    margin: 15px 25px;
+    border-radius: 10px;
+}
