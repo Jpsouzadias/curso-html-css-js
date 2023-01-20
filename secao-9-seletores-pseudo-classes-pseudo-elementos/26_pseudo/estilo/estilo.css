@@ -24,6 +24,11 @@ input[type="text"]:focus{
     background-color: #ccc;
 }
 
+input[type="text"]:read-only{
+    background-color: yellow;
+}
+
+
 a:focus, a:hover, div:focus{
     background-color: red;
 }
