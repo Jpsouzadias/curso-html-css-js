@@ -1,0 +1,7 @@
+article:nth-child(1) a{
+    color: red;
+}
+
+article:nth-child(3) > p{
+    color: darkturquoise;
+}
