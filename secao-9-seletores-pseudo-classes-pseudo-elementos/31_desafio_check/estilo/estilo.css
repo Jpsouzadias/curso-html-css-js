@@ -30,12 +30,16 @@ label input:checked + span::before {
     background-color: darkcyan;
 }
 
-input[type="checkbox"] {
+label input:focus + span{
+    box-shadow: 0 0 0 1px black;
+}
+
+input {
+    opacity: 0;
     height: 1px;
     width: 1px;
     display: inline-block;
     overflow: hidden;
-    visibility: hidden;
     margin: 0;
 }
 

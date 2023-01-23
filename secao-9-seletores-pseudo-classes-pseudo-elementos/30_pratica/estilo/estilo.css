@@ -29,10 +29,10 @@ label{
 }
 
 input[type="checkbox"]{
+    opacity: 0;
     width: 1px;
     height: 1px;
     overflow: hidden;
-    visibility: hidden;
     display: inline-block;
     margin: 0;
 }
