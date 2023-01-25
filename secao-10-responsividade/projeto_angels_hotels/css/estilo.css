@@ -194,3 +194,13 @@ h1, h2, h3, h4, h5, h6{
         float: right;
     }
 }
+
+@media screen and (min-width: 62.5em) { /* 1000 / 16 */
+    .top-content {
+/*        background-color: #521a66;
+        background-image: url(../images/bg_topo_1198x670.jpg);  */
+        background: #521a66 url(../images/bg_topo_1198x670.jpg);
+        height: 15em;
+        padding-top: 15em;
+    }
+}
