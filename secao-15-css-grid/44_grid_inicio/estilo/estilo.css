@@ -8,7 +8,6 @@
     font-size: 2em;
     font-family: sans-serif;
     padding: 5px 15px;
-    margin: 10px;
 }
 .gridItem:nth-child(even){
     background: #999;
@@ -21,11 +20,12 @@
 /* GRID */
 
 .gridContainer{
+    width: 100%;
     display: grid;
     /*grid-template-columns: 100px 100px 100px; */
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: 100px 1fr 2fr;
     grid-template-rows: 100px 100px;
     /*row-gap: 30px;
-    column-gap: 12px;*/
-    gap: 30px 12px;
+    column-gap: 10px;*/
+    gap: 30px 10px;
 }
