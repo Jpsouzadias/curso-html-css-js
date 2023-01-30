@@ -1,24 +1,12 @@
-.destaque{
+.jumbotron{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.jumbotron__text{
+    color: white;
+}
+
+.jumbotron__title{
     color: red;
-}
-
-#unico{
-    color: blue;
-}
-
-p.destaque{
-    color: orange;
-}
-
-p[lang]{
-    color: brown;
-}
-
-p{
-    color: yellow !important;
-}
-
-p{
-    color: green;
 }
 
