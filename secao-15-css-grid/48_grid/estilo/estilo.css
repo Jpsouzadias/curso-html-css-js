@@ -6,7 +6,7 @@
     gap: 10px;
 
     grid-template-columns: repeat(auto-fit, 100px);
-    grid-template-rows: 100px 100px;
+    grid-auto-rows: 100px;
 }
 
 .gridItem{
