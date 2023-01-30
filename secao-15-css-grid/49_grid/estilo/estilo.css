@@ -1,0 +1,16 @@
+.gridContainer{
+    width: 90%;
+    background-color: #ccc;
+    margin: 30px auto;
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-auto-rows: 100px;
+}
+
+.gridItem{
+    background-color: orange;
+    padding: 15px;
+    font-family: sans-serif;
+}
