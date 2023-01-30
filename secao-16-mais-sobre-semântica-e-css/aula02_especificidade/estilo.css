@@ -1,0 +1,24 @@
+.destaque{
+    color: red;
+}
+
+#unico{
+    color: blue;
+}
+
+p.destaque{
+    color: orange;
+}
+
+p[lang]{
+    color: brown;
+}
+
+p{
+    color: yellow !important;
+}
+
+p{
+    color: green;
+}
+
