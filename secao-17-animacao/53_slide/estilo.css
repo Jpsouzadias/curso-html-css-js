@@ -1,0 +1,13 @@
+body{
+    font-family: sans-serif;
+    color: white;
+    background-color: #1a1818;
+    margin: 0;
+}
+
+#slide-externo{
+    width: 80vw;
+    height: 50vh;
+    border: 10px solid white;
+    box-shadow: 0 0 10px black;
+}
