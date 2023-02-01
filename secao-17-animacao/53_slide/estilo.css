@@ -1,3 +1,42 @@
+@keyframes slide{
+    0%{
+        transform: translateY(0);
+    }
+
+    22%{
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(-50vh);
+    }
+
+    47%{
+        transform: translateY(-50vh);
+    }
+
+    50%{
+        transform: translateY(-100vh);
+    }
+
+    72%{
+        transform: translateY(-100vh);
+    }
+
+    75%{
+        transform: translateY(-150vh);
+    }
+
+    97%{
+        transform: translateY(-150vh);
+    }
+
+    100%{
+        transform: translateY(0vh);
+    }
+}
+
+
 body{
     font-family: sans-serif;
     color: white;
@@ -10,4 +49,19 @@ body{
     height: 50vh;
     border: 10px solid white;
     box-shadow: 0 0 10px black;
+    margin-left: 10vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#slide-interno{
+    width: 100%;
+    animation: slide 10s infinite cubic-bezier(.64,-0.31,.4,1.27);
+}
+
+#slide-interno img{
+    display: block;
+    height:  50vh;
+    width: 100%;
+    /* object-fit: cover; */
 }
