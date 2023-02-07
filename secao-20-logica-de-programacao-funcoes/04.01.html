@@ -12,16 +12,21 @@
 <body>
     <h1>Lógica de programação JavaScript</h1>
 
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
     <div id="output"></div>
 
     <script>
 
+        function mostrarTabuada(){
+            alert("mostrarTabuada chamada")
+        }
+
+        mostrarTabuada();
         var output = document.querySelector("#output");
 
         var mensagem = "";
-        for (var i = 0; i < 1001; i++){
-            mensagem += "i: " + i + "<br>";
-        }
 
         output.innerHTML = mensagem;
     </script>
