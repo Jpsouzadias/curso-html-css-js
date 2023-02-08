@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="author" content="João Pedro">
+            <meta name="description" content="Descrição qualquer">
+            <meta name="keywords" content="html5, tecnologia">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Lógica de programação JavaScript</title>
+</head>
+<body>
+    <h1>Lógica de programação JavaScript</h1>
+    
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <button onclick="limpar()">Limpar</button>
+
+    <div id="output"></div>
+
+    <script>
+        var n = parseFloat(prompt("digite um número"));
+
+        var output = document.querySelector("#output");
+        output.innerHTML = n;
+
+            function somar(){
+                var somar = parseFloat(prompt("digite um número"));
+                n += somar;
+                
+                output.innerHTML= n;
+            }
+
+            function subtrair(){
+                var subtrair = parseFloat(prompt("digite um número"));
+                n = n - subtrair;
+
+                output.innerHTML= n;
+            }
+
+            function multiplicar(){
+                var multiplicar = parseFloat(prompt("digite um número"));
+                n = n * multiplicar;
+
+                output.innerHTML = n;
+            }
+            
+            function dividir(){
+                var dividir = parseFloat(prompt("digite um número"));
+                n = n / dividir;
+
+                output.innerHTML = n;
+            }
+
+            function limpar(){
+                n = 0
+
+                output.innerHTML = n;
+            }
+
+    </script>
+</body>
+</html>
