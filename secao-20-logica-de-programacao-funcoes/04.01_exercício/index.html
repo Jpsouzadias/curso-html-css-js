@@ -22,42 +22,39 @@
 
     <script>
         var n = parseFloat(prompt("digite um número"));
+        escreve();
 
-        var output = document.querySelector("#output");
-        output.innerHTML = n;
-
+            function escreve(){
+                var output = document.querySelector("#output");
+                output.innerHTML = n;
+            }
             function somar(){
                 var somar = parseFloat(prompt("digite um número"));
                 n += somar;
-                
-                output.innerHTML= n;
+                escreve();
             }
 
             function subtrair(){
                 var subtrair = parseFloat(prompt("digite um número"));
                 n = n - subtrair;
-
-                output.innerHTML= n;
+                escreve();
             }
 
             function multiplicar(){
                 var multiplicar = parseFloat(prompt("digite um número"));
                 n = n * multiplicar;
-
-                output.innerHTML = n;
+                escreve();
             }
             
             function dividir(){
                 var dividir = parseFloat(prompt("digite um número"));
                 n = n / dividir;
-
-                output.innerHTML = n;
+                escreve();
             }
 
             function limpar(){
                 n = 0
-
-                output.innerHTML = n;
+                escreve();
             }
 
     </script>
