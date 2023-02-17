@@ -12,58 +12,6 @@
 <body>
     <h1>Lógica de programação JavaScript</h1>
     
-    <button onclick="calcular('+')">+</button>
-    <button onclick="calcular('-')">-</button>
-    <button onclick="calcular('*')">*</button>
-    <button onclick="calcular('/')">/</button>
-
-    <div id="output"></div>
-
-    <script>
-        var n1 = parseFloat(prompt("digite um número"));
-        escreve();
-
-            function escreve(){
-                var output = document.querySelector("#output");
-                output.innerHTML = n1;
-            }
-
-            function calcular(simbolo){
-                var n = parseFloat(prompt("digite um número"));
-                switch(simbolo){
-                    case '+':
-                        n1 += n;
-                        break;
-                    case '-':
-                        n1 -= n;
-                        break;
-                    case '*':
-                        n1 *= n;
-                        break;
-                    case '/':
-                        n1 /= n;
-                }
-                escreve();
-            }
-
-    </script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-            <meta charset="UTF-8">
-            <meta name="author" content="João Pedro">
-            <meta name="description" content="Descrição qualquer">
-            <meta name="keywords" content="html5, tecnologia">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Lógica de programação JavaScript</title>
-</head>
-<body>
-    <h1>Lógica de programação JavaScript</h1>
-    
     <button onclick="iniciarCalculo('+')">+</button>
     <button onclick="iniciarCalculo('-')">-</button>
     <button onclick="iniciarCalculo('*')">*</button>
@@ -71,46 +19,6 @@
 
     <div id="output"></div>
 
-    <script>
-        var n2 = parseFloat(prompt("digite um número"));
-        escreve(n2);
-
-            function iniciarCalculo(simbolo){
-                var n1 =  parseFloat(document.querySelector('#output').textContent);
-
-                var n2 = parseFloat(prompt("digite outro número"));
-
-                var msg = calcular(simbolo, n1, n2);
-
-                escreve(msg);
-            }
-
-            function escreve(mensagem){
-                var output = document.querySelector("#output");
-                output.innerHTML = mensagem;
-            }
-            
-            function calcular(simbolo, n1, n2){
-                
-                var numeroCalculado = null;
-
-                switch(simbolo){
-                    case '+':
-                        numeroCalculado = n1 + n2;
-                        break;
-                    case '-':
-                        numeroCalculado = n1 - n2;
-                        break;
-                    case '*':
-                        numeroCalculado = n1 * n2;
-                        break;
-                    case '/':
-                        numeroCalculado = n1 / n2;
-                }
-                
-                return numeroCalculado;
-            }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
