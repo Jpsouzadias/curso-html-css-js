@@ -1,7 +1,6 @@
-
-    
-            
-var n1 = prompt('digite um numero');
+console.log('testando meu código');
+        
+var n1 = parseInt(prompt("digite um número"));
             
 escreve();
 
@@ -12,7 +11,7 @@ function escreve(){
 
 
 function calcular(simbolo){
-    var n = prompt('digite outro numero');
+    var n = parseInt(prompt("digite outro número"));
                     
     switch(simbolo){
         case '+':
