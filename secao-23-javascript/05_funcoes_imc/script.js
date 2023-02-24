@@ -1,7 +1,13 @@
 (function(){
     'use strict';
-    function calcularIMC(peso, altura){
-        return peso / (altura**2);
+    function calcularIMC(peso, altura, callback){
+        var imc = peso / (altura**2);
+
+        if(callback && typeof callback === 'function'){
+            return callback(imc);
+        }
+        console.log('não passou callback');
+        return imc;
     }
 
     function classificaIMC(imc){
@@ -25,8 +31,7 @@
     var peso = 58;
     var altura = 1.75;
 
-    var imc = calcularIMC(peso, altura);
-    var classificacao = classificaIMC(imc);
+    var imc = calcularIMC(peso, altura, classificaIMC);
 
-    console.log('classificação IMC: ', classificacao);
+    console.log('classificação IMC: ', imc);
 })()
