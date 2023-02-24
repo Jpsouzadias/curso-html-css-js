@@ -33,3 +33,27 @@ mostraX();
 
 console.log("mostra x fora: ", x);
 console.log("mostra y fora: ", y);
+
+//IIFE
+(function(){
+    'use strict';
+    var isValid = false;
+    console.log(isValid);
+
+    function somar(){
+        console.log(arguments);
+        var result = 0;
+        var x = 0;
+
+        while(arguments[x]){
+            //result = result + arguments[x];
+            result += arguments[x];
+            //x = x +1;
+            x++;
+        }
+        console.log('result: ', result);
+    }
+
+    somar(20, 20, 10, 5, 5, 15);
+})();
+
