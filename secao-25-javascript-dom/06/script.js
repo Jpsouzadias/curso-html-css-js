@@ -1,0 +1,1 @@
+document.querySelector('h1').textContent = 'Parágrafo alterado via JavaScript';
