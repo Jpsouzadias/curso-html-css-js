@@ -1,0 +1,1 @@
+var minhaStr = "João";
