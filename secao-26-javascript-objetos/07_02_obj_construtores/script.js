@@ -1,18 +1,25 @@
-function Caneta(preco, cor){
+var Caneta = (function(window){
+    'use strict'
+    console.log(this);
+    function _caneta(preco, cor){
     
-    var color = cor || 'black';
-    this.preco = preco || 1;
-
-    this.mudarCor = function(cor){
-        if(cor !== 'black' && cor !== 'red' && cor !== 'white'){
-            return;
+        //privado
+        var color = cor || 'black';
+        //publicas
+        this.preco = preco || 1;
+    
+        this.mudarCor = function(cor){
+            if(cor !== 'black' && cor !== 'red' && cor !== 'white'){
+                return;
+            }
+            color = cor;
         }
-        color = cor;
+        
+        this.pegaCor = function(){
+            return color;
+        }
     }
     
-    this.pegaCor = function(){
-        return color;
-    }
-}
+    return _caneta;
+})(window)
 
-var caneta1 = new Caneta(2, 'red');
