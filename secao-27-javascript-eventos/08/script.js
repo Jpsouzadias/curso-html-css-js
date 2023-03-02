@@ -30,14 +30,19 @@ btn3.onclick= function () {
 var $d1 = document.querySelector('#d1');
 var $d1Span = document.querySelector('#d1 span');
 
-$d1.addEventListener('click', function () {
-    console.log('click no $d1');    
-}, true);
+$d1.addEventListener('click', function(e){
+    console.log('click no $d1'); 
+    e.stopPropagation();  
+}, false);
 
-$d1Span.addEventListener('click', function () {
+$d1Span.addEventListener('click', function(){
     console.log('click no $d1Span');    
-}, true);
+}, false);
 
-document.addEventListener('click', function () {
+document.addEventListener('click', function(e){
+
     console.log('clicou no document');
-}, true);
+    console.log(e.currentTarget);
+    console.log(e.target);
+    console.log(this); 
+}, false);
