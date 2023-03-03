@@ -6,14 +6,23 @@
     var $restaContainer = document.getElementById('restaContainer');
     var maxima = $txtMsg.maxLength;
 
-    $resta.textContent = maxima;
+    function mostrarContainerResta(){
+        $restaContainer.style.display = 'block';
+    }
 
-    $restaContainer.style.display = 'block';
+    mostrarContainerResta();
+    mostrarCaracteresFaltantes(maxima);
 
     $txtMsg.addEventListener('input', checkLength);
 
     function checkLength(e){
         var numeroLetrasDigitadas = this.value.length;
-        $resta.textContent = maxima - numeroLetrasDigitadas;
+        var caracteresRestantes = parseInt(maxima) - parseInt(numeroLetrasDigitadas);
+        mostrarCaracteresFaltantes(caracteresRestantes);
     }
+
+    function mostrarCaracteresFaltantes(n){
+        $resta.textContent = n;
+    }
+
 })()
