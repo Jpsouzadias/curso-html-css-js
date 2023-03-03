@@ -1,26 +1,16 @@
 (function(){
     'use strict';
+    var maxima = 100;
+
     var $txtMsg = document.getElementById('msg');
+    var $resta = document.getElementById('resta');
 
-    $txtMsg.addEventListener('keypress', keypress);
-    $txtMsg.addEventListener('keyup', keyup);
-    $txtMsg.addEventListener('keydown', keydown);
-    $txtMsg.addEventListener('input', input);
+    $resta.textContent = maxima;
 
-    function keypress(e){
-        console.log('keypress', this.value);
-    }
+    $txtMsg.addEventListener('input', checkLength);
 
-    function keyup(e){
-        console.log('keyup', this.value);
-    }
-
-    function keydown(e){
-        console.log('keydown', this.value);
-    
-    }
-    function input(e){
-        console.log('input');
-        console.log(this.value);
+    function checkLength(e){
+        var numeroLetrasDigitadas = this.value.length;
+        $resta.textContent = maxima - numeroLetrasDigitadas;
     }
 })()
