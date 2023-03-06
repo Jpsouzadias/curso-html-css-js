@@ -14,7 +14,7 @@
     });
 
     for(var i = 0; i < $lis.length; i++){
-        $lis[i].addEventListener('click', toogleDone)
+        addEvent($lis[i])
     }
 
     function toogleDone(){
@@ -32,6 +32,12 @@
 
         $txtTask.value = '';
         $txtTask.focus();
+
+        addEvent(li);
+    }
+
+    function addEvent(li){
+        $lis[i].addEventListener('click', toogleDone)
     }
 })()
 
