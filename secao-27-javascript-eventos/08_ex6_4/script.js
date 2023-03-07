@@ -37,7 +37,7 @@
     }
 
     function addEvent(li){
-        $lis[i].addEventListener('click', toogleDone)
+        li.addEventListener('click', toogleDone)
     }
 })()
 
