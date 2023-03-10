@@ -51,8 +51,24 @@ console.log(ultimoItem);
 console.log(arr);
 
 var primeiroItem = arr.shift();
-console.log(typeof primeiroItem)
+console.log(typeof primeiroItem);
 console.log(arr);
 
 arr.unshift(true, false, 'unshift');
 console.log((arr));
+
+var somaDeArr = numeros.reduce(function(anterior, atual, i){
+    console.log('anterior', anterior, '  |  atual', atual, '  |  i', i);
+    return anterior + atual + i;    
+});
+console.log(numeros);
+console.log(somaDeArr);
+
+var testeReduce = ['1', '2', '3', '4', '5'].reduceRight(function (i, a) {
+    return i + a;
+});
+console.log(testeReduce);
+
+var arr = [10,20,30];
+arr.reverse();
+console.log(arr);
