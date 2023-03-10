@@ -27,3 +27,18 @@ console.log('posicaoStr2', posicaoStr2);
 
 var posicaoStr3 = arr.lastIndexOf(2, 5);
 console.log('posicaoStr3', posicaoStr3);
+
+console.log(numeros);
+numeros = numeros.map(function(el, i, arr){
+    return el * i;
+});
+console.log(numeros);
+
+var arr2 = arr.concat(numeros, 'ola', 'arr2', 100);
+console.log(arr2);
+
+var str = arr2.join(' -- ');
+console.log(str);
+
+var str1 = arr2.toString();
+console.log(str1);
