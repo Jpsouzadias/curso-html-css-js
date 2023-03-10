@@ -42,3 +42,17 @@ console.log(str);
 
 var str1 = arr2.toString();
 console.log(str1);
+
+arr.push('novo', 'item');
+console.log(arr);
+
+var ultimoItem = arr.pop();
+console.log(ultimoItem);
+console.log(arr);
+
+var primeiroItem = arr.shift();
+console.log(typeof primeiroItem)
+console.log(arr);
+
+arr.unshift(true, false, 'unshift');
+console.log((arr));
