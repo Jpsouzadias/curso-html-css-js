@@ -72,3 +72,8 @@ console.log(testeReduce);
 var arr = [10,20,30];
 arr.reverse();
 console.log(arr);
+
+console.log(arr2.slice(2,5));
+
+arr2 = arr2.splice(2, 0, 'limao', 'melao');
+console.log(arr2);
