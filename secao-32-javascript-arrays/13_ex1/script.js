@@ -13,10 +13,8 @@
             return nota === 0;
         });
          */
-        
-        var temZero = notas.some(function(nota){
-            return nota === 0;
-        });
+
+        var temZero = notas.some(nota => nota === 0);
         
         var mensagem = temZero ? 'reprovado' : calcularMedia.apply(this, notas);
 
