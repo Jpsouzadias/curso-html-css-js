@@ -9,10 +9,15 @@
         var notas = recuperarNumerosDeColunas(tds);
 
         
+       /*  var temZero = notas.some(function(nota){
+            return nota === 0;
+        });
+         */
+        
         var temZero = notas.some(function(nota){
             return nota === 0;
         });
-
+        
         var mensagem = temZero ? 'reprovado' : calcularMedia.apply(this, notas);
 
         //variavel = expressao ?  bloco verdade ; bloco mentira
