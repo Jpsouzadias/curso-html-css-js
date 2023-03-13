@@ -15,7 +15,7 @@
 
         var mensagem = temZero ? 'reprovado' : calcularMedia.apply(this, notas);
 
-        //variavel = expressao ? bloco verdade ; bloco mentira
+        //variavel = expressao ?  bloco verdade ; bloco mentira
   
         linhaAluno.querySelector('.aluno-m').textContent = mensagem;
         x++;
