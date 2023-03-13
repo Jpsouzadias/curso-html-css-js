@@ -75,5 +75,9 @@ console.log(arr);
 
 console.log(arr2.slice(2,5));
 
-arr2 = arr2.splice(2, 0, 'limao', 'melao');
+
+console.log('---------------');
 console.log(arr2);
+var arr3 = arr2.splice(2, 3, 'limao', 'melao');
+console.log(arr2);
+console.log(arr3);
