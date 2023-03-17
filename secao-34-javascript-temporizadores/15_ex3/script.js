@@ -9,18 +9,41 @@
     $pausar.addEventListener('click', pausar);
     $parar.addEventListener('click', parar);
 
+    var intervalo = null;
     var msClickIniciar = 0;
+    var msClickPausar = 0;
+    var msTempoDecorrido = 0;
+    var rodando = false;
 
     function iniciar() {
         msClickIniciar = Date.now();
-        iniciarCronometo();
+        iniciarCronometro();
+        rodando = true;
     }
 
-    function iniciarCronometo() {
-        setInterval(function () {
+    function pausar() {
+        if (rodando) {
+            rodando = false;
+            clearInterval(intervalo);
+            msClickPausar = Date.now();
+            msTempoDecorrido += (msClickPausar - msClickIniciar);
+        } else {
+            rodando = true;
+            msClickIniciar = Date.now();
+            iniciarCronometro(msTempoDecorrido);
+        }
+    }
+
+    function parar() {
+        
+    }
+
+    function iniciarCronometro(TempoDecorrido) {
+        var _ms = TempoDecorrido || 0;
+        intervalo = setInterval(function () {
             var msAgora = Date.now();
             var diferença = msAgora - msClickIniciar;
-            $cronometro.value = formataMs(diferença);
+            $cronometro.value = formataMs(diferença + _ms);
         }, 100);
     }
 
@@ -49,11 +72,4 @@
         }
     }
 
-    function pausar() {
-        
-    }
-
-    function parar() {
-        
-    }
 })()
