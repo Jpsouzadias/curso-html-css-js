@@ -35,7 +35,12 @@
     }
 
     function parar() {
-        
+        msClickPausar = 0;
+        msClickIniciar = 0;
+        msTempoDecorrido = 0;
+        rodando = false;
+        clearInterval(intervalo);
+        $cronometro.value = '';
     }
 
     function iniciarCronometro(TempoDecorrido) {
