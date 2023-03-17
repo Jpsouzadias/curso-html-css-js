@@ -17,6 +17,7 @@
 
     function iniciar() {
         if (rodando) return;
+        parar();
         msClickIniciar = Date.now();
         iniciarCronometro();
         rodando = true;
