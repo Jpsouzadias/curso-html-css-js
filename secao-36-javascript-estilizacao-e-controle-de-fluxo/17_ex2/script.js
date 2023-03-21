@@ -29,11 +29,13 @@
         var qtd = positions.length;
         while(qtd){
             qtd--;
-            if(positions[qtd] < 0){
+            if(positions[qtd] < innerHeight / 2){
                 return $links[qtd]
             }
         }
         return $links[0];
     }
+
+    destacaMenu();
 
 })()
