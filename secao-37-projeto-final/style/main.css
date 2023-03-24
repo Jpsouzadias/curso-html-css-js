@@ -123,8 +123,17 @@ img{
     margin-top: 2.5em;
 }
 
-.people-cards__card{
-    
+.people-cards__card:hover {
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+
+.people-cards__card:hover .people-cards__avatar img{
+    transform: translateY(-50%);
+}
+
+.people-cards__card:hover .people-cards__tittle, .people-cards__card:hover .people-cards__text{
+    color: #63c6ae;
 }
 
 .people-cards__image{
@@ -148,6 +157,7 @@ img{
 .people-cards__tittle{
     color: #737c85;
     font-size: 21px;
+    font-weight: normal;
 }
 
 .people-cards_text{
