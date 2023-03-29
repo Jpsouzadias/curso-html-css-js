@@ -72,6 +72,16 @@ img{
     color: #63c6ae;
 }
 
+.header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+
+
 .hero{
     height: 80vh;
     padding: 40px 20px;
