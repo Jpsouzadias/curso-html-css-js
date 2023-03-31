@@ -64,6 +64,5 @@ function Menu(config){
         applyStyleToNav(_style)
         
         _opened = false;
-    }
-    
+    }   
 }
